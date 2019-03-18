@@ -2,7 +2,7 @@
 // @name         Auto Login WMS
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Autologin WMS
+// @description  Auto Login WMS
 // @author       Laksamadi Guko
 // @match        *://welcome2.wifi.id/wms/*
 // @grant        none
