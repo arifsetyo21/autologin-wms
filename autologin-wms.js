@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 window.onload=function(){
-  setInterval(autoLogin,100);
+  setInterval(autoLogin,5000);
 }
 
 function autoLogin(){
