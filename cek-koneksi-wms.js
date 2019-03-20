@@ -8,6 +8,8 @@
 // @grant        none
 // ==/UserScript==
 
+// script ini khusus untuk reaspberry pi yang digunakan untuk monitor autologin WMS, bukan untuk pc yang digunakan sehari hari.
+
 window.onload=function(){
 
     setInterval(function() {
