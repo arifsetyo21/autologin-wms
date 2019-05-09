@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Cek Koneksi WMS
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Cek Koneksi untuk Auto Login WMS
 // @author       Laksamadi Guko
-// @match        *
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
@@ -13,14 +13,14 @@
 window.onload=function(){
 
     setInterval(function() {
-    ping('https://google.com/').then(function(delta) {
+    ping('https://ssgoogle.com/').then(function(delta) {
         window.location.href = 'http://landing6.wifi.id/landing/';
     }).catch(function(err) {
         window.location.href = 'URL-LOGIN-WMS';
         //contoh url : https://welcome2.wifi.id/wms/?gw_id=WAG-D5-RKT&client_mac=18:a6:f7:1c:8a:17&wlan=SBKPS00359/TKL-W132151960-0001:KEMANGI%2041@WIFI.ID
         // sesuaikan URL-LOGIN-WMS dengan kondisi masing-masing
     });
-    }, 15000);
+    }, 5000);
 
 }
 
