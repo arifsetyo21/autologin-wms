@@ -13,7 +13,7 @@
 window.onload=function(){
 
     setInterval(function() {
-    ping('https://ssgoogle.com/').then(function(delta) {
+    ping('https://google.com/').then(function(delta) {
         window.location.href = 'http://landing6.wifi.id/landing/';
     }).catch(function(err) {
         window.location.href = 'URL-LOGIN-WMS';
