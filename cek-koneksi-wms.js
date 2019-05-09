@@ -20,7 +20,7 @@ window.onload=function(){
         //contoh url : https://welcome2.wifi.id/wms/?gw_id=WAG-D5-RKT&client_mac=18:a6:f7:1c:8a:17&wlan=SBKPS00359/TKL-W132151960-0001:KEMANGI%2041@WIFI.ID
         // sesuaikan URL-LOGIN-WMS dengan kondisi masing-masing
     });
-    }, 5000);
+    }, 15000);
 
 }
 
