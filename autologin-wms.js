@@ -1,23 +1,26 @@
 // ==UserScript==
 // @name         Auto Login WMS
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Auto Login WMS
 // @author       Laksamadi Guko
 // @match        *://welcome2.wifi.id/wms/*
 // @grant        none
 // ==/UserScript==
 
-window.onload=function(){
-  setInterval(autoLogin,5000);
+var username = "USERNAME-WMS";
+var password = "PASSWORD-WMS";
+document.getElementById("username").value = username;
+document.getElementById("password").value = password;
+
+function ClickClass(classname){
+    var i;
+    var el = document.getElementsByClassName(classname);
+    if(el){
+        for (i = 0; i < (el.length); i++) {
+            el[i].click();
+        }
+    }
 }
 
-function autoLogin(){
-  var username = "USERNAME-WMS";
-  var password = "PASSWORD-WMS";
-  document.getElementById("username").value = username;
-  document.getElementById("password").value = password;
-  if(document.getElementsByClassName("button-lg").length>0){
-  document.getElementsByClassName("button-lg")[0].click();
-}
-}
+ClickClass("button-lg")
